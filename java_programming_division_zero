@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class division{
+    public static void Dividetwonumbers(int a,int b){
+        try{
+            int k=a/b;
+            System.out.println(k);
+
+        }
+        catch(Exception e)
+        {
+            System.out.println("Division by zero not possible");
+        }
+        finally{
+            System.out.println("    thanks");
+        }
+    }
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n1=sc.nextInt();
+        int n2=sc.nextInt();
+        Dividetwonumbers(n1,n2);
+    }
+}
